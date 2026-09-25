@@ -1,0 +1,7 @@
+numpy
+optuna==5.0.0
+pandas
+scikit-learn
+torch
+xgboost
+pytest

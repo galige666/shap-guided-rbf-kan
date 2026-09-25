@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "shap-guided-rbf-kan"
+version = "0.3.0"
+description = "Compact reference implementation of SHAP-guided RBF-KAN spectral regression"
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+  "numpy",
+  "optuna==5.0.0",
+  "pandas",
+  "scikit-learn",
+  "torch",
+  "xgboost",
+]
+
+[project.optional-dependencies]
+test = ["pytest"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
